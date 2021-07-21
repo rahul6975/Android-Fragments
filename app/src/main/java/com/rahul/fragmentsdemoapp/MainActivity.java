@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.add(R.id.fragmentContainer, fragment, "demoFragment");
+        fragmentTransaction.replace(R.id.fragmentContainer, fragment, "demoFragment");
 //        fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
     }
